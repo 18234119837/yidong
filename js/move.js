@@ -84,7 +84,6 @@ lprev.onclick = function () {
 {
     const p_txt1 = document.querySelectorAll('.public1>div');
     const p_txt2 = document.querySelectorAll(".public2>div");
-    console.log(p_txt1, p_txt2)
     const pl = document.querySelector(".p-right .p-l ");
     const pr = document.querySelector(".p-right .p-r");
     let num = 0;
@@ -198,3 +197,20 @@ lprev.onclick = function () {
         }
     }
 }
+//右侧图片移动效果开始
+{
+    let malltu=document.querySelectorAll(' .w-nav-box li');
+    malltu.forEach(function(ele,index){
+        ele.onmouseover=function(){
+            this.style.left='-84px';
+        }
+        ele.onmouseout=function(){
+            this.style.left="-20px";
+        }
+
+    })
+
+}
+//右侧图片移动效果结束
+
+
