@@ -75,6 +75,7 @@
     position:fixed;
     right:0;
     top:64%;
+    z-index: 9999;
 }
 .w-nav-two-img{
     width: 40px;
