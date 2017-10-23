@@ -1,3 +1,21 @@
+//banner图上的导航开始
+{
+    let headlist=document.querySelectorAll('.head .head-h');
+    console.log(headlist);
+    let head_hover1=document.querySelector('.head-hover1');
+    let head_hover2=document.querySelector('.head-hover2');
+    let head_hover3=document.querySelector('.head-hover3');
+    let head_hover4=document.querySelector('.head-hover4');
+    
+    
+    
+    
+    
+    
+    
+
+}
+//banner图上的导航结束
 //long轮播开始
 let long = document.querySelector('.long');
 let long_box = document.querySelector('.long-box');
@@ -124,7 +142,6 @@ lprev.onclick = function () {
     let now = 0;
     let z = 10;
     let tp = setInterval(movee, 3000);
-
     function movee(dir = 'r') {
         if (dir === 'r') {
             imgs[now].classList.add('leftout');
@@ -178,12 +195,14 @@ lprev.onclick = function () {
     bannerbox.onmouseout = function () {
         tp = setInterval(movee, 3000);
     }
+
     window.addEventListener('onblur', function () {
         clearInterval(tp);
     })
     window.addEventListener('onfocus', function () {
         tp = setInterval(movee, 3000);
     })
+
     nnext.onclick = function () {
         if (flag) {
             movee('r');
@@ -197,6 +216,9 @@ lprev.onclick = function () {
         }
     }
 }
+
+
+
 //右侧图片移动效果开始
 {
     let malltu=document.querySelectorAll(' .w-nav-box li');
@@ -209,7 +231,6 @@ lprev.onclick = function () {
         }
 
     })
-
 }
 //右侧图片移动效果结束
 
